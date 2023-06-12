@@ -13,3 +13,92 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .title {
+  text-align: center;
+ }
+
+.letters-container ul {
+  display: flex;
+}
+
+ .letters-container li {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 0 0 5px black;
+  font-weight: bold;
+  list-style-type: none;
+ }
+
+ .answer {
+  margin-top: 30px;
+ }
+
+ .answer p {
+  font-size: 20px;
+ }
+
+ .answer #word {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(216, 216, 216);
+  border-radius: 25px;
+ }
+
+ .answer #submit {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  margin-top: 20px;
+  cursor: pointer;
+ }
+
+ .answer #submit:hover{
+  background-color: blueviolet;
+  color: white;
+ }
+
+ .result {
+  border: 2px solid blueviolet;
+  padding: 15px;
+  border-radius: 5px;
+ }
+
+ .return a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  margin-top: 25px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+ }
+
+ .return a:hover {
+  background-color: rgb(111, 29, 187);
+ }

@@ -1,0 +1,16 @@
+<div class="title"><h1>Longest Word Game</h1></div>
+<div class="letters-container">
+  <ul>
+  <% @letters.each do |letter| %>
+    <li class="individual-letter">
+      <%= letter %>
+    </li>
+  <% end %>
+  </ul>
+</div>
+<div class="answer">
+  <p>Votre résultat :</p>
+  <div class="result"><p><strong><%= @word %></strong> <%= @error %></div>
+  <div class="return"><%= link_to 'Ask a new question', '/new' %></div>
+  <p>Mon score : <%= @user_session %></p>
+</div>
